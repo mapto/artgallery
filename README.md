@@ -1,1 +1,1 @@
-A public project
+A public project for an art gallery website.

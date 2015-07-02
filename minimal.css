@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900,700&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic-ext);
+
+html, body {
+  background-color: #FAFAFA;
+  overflow: hidden;
+  height: 100%;
+}
+
+#container {
+  font-family: "EB Garamond";
+  margin: 0 auto;
+  width: 800px;  
+  border: 1px solid lightgrey;
+  background-color: white;
+  min-height: 100%;
+  z-index: 10;
+}
+
+
+
+
+
+header {
+  padding: 0 0 2em 0;  
+  z-index: 20;
+}
+
+h1 {
+  margin: .5em 2em;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav li {
+  display: block;
+  border-left: 1px solid lightgrey;
+  padding: .1em 2em;
+  text-align: center;
+  float: left;
+}
+
+nav a {
+  color: darkgrey;
+}
+
+nav a:hover,
+nav .active a {
+  color: black;
+}
+
+nav li:last-child {
+  border-right: 1px solid lightgrey;
+}
+/*
+nav .spacer {
+  float: inherit;
+}
+*/
+nav a, h2 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.spacer {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+section {
+  display: none;
+  margin: 20px;
+  position: relative;
+}
+
+section.active {
+  display: block;
+}
+
+article {
+  margin: 5px;
+  width: 370px;
+  height: 240px; 
+  border: 1px solid lightgrey;
+  position: relative;
+  overflow: hidden;
+}
+
+.stories {
+  display: flex;
+}
+
+article.featured {
+  width: 100%;
+  height: 480px; 
+}
+
+article img {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+}
+
+article h2 {
+  margin: 0;
+  z-index: 100;
+  position: absolute;
+  padding: 0.5em;
+  width: 100%;
+  background-color: lightgrey;
+  opacity: 0.5;
+  color: black;
+  bottom: 0;
+}
+
+article .outline {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 90;
+  width: 100%;
+}
+
+
+
+
+footer {
+  margin: 0 2em;
+  bottom: 0;
+  position: absolute;
+  z-index: 20;
+}
+
